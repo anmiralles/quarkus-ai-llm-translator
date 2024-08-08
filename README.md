@@ -23,7 +23,7 @@ http POST http://localhost:8080/translate/text text="Esto es un test" language="
 Previous to the next one, just create a file ("file.txt") and put some text on it to translate.
 
 ```shell script
-http -f POST http://localhost:8080/files input@file.txt
+http -f POST http://localhost:8080/translate/file input@file.txt
 ```
 
 ## Related Guides
