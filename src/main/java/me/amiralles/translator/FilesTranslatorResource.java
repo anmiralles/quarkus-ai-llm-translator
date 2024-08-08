@@ -18,7 +18,7 @@ import java.util.Map;
 
 @ApplicationScoped
 @Produces(MediaType.TEXT_HTML)
-@Path("files")
+@Path("/translate")
 public class FilesTranslatorResource {
 
     @Inject
@@ -32,6 +32,7 @@ public class FilesTranslatorResource {
     //     return template.instance();
     // }
 
+    @Path("/file")
     @POST
     @Consumes(MediaType.MULTIPART_FORM_DATA)
     @Produces(MediaType.APPLICATION_JSON)
